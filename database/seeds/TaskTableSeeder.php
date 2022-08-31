@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Task;
+use App\Customer;
 
 class TaskTableSeeder extends Seeder
 {
@@ -12,6 +12,6 @@ class TaskTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Task::class, 35)->create();
+        factory(Customer::class, 5)->create();
     }
 }

@@ -1,19 +1,18 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Model Factories
-|--------------------------------------------------------------------------
-|
-| Here you may define all of your model factories. Model factories give
-| you a convenient way to create models for testing and seeding your
-| database. Just tell the factory how a default model should look.
-|
-*/
+
+
+use App\Customer;
+use Faker\Generator as Faker;
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(App\Task::class, function (Faker\Generator $faker) {
+$factory->define(Customer::class, function (Faker $faker) {
     return [
-        'keep' => $faker->sentence,
+        'name' => $faker->sentence,
+        'address' => $faker->sentence,
+        'phone_number' => $faker->sentence,
+
+        'created_at' => $faker->dateTime,
+
     ];
 });

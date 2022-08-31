@@ -27,6 +27,30 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
+new Vue({
+    el: '#crud',
+    created: function(){
+        this.getKeeps();
+    },
+    data: {
+        keeps: []
+    },
+     methods:{
+         getKeeps: function (){
+             var urlKeeps = 'customers';
+             axios.get(urlKeeps).then(response => {
+                 this.keeps = response.data
+             });
+         },
+         deleteKeep: function (keep){
+
+             var url ='customers/' + keep.id;
+             axios.delete(url).then(response =>{
+
+               this.getKeeps();
+               toastr.success('Eliminado Correctamente');
+             });
+         }
+     }
+
 });
