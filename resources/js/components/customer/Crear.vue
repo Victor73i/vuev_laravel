@@ -12,7 +12,7 @@
                                     <label>Name</label>
                                     <input type="text" class="form-control" v-model="customer.name" placeholder="Enter you Name" required>
                                 </div>
-                                <br>
+                                
 
                             </div>
                             <div class="col-12 mb-2">
@@ -20,7 +20,7 @@
                                     <label>Address</label>
                                     <input type="text" class="form-control" v-model="customer.address" placeholder="Enter you Address" required>
                                 </div>
-                                <br>
+
 
                             </div>
                             <div class="col-12 mb-2">
@@ -35,6 +35,9 @@
                             <br>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Submit</button>
+
+                                <router-link exact-active-class="active" to="/customers" class="nav-link"><button type="submit" class="btn btn-primary">List</button></router-link>
+
                             </div>
                         </div>
                     </form>

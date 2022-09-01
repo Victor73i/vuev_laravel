@@ -78,6 +78,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "crear-customer",
   data: function data() {
@@ -1040,9 +1043,7 @@ var render = function() {
                               }
                             }
                           })
-                        ]),
-                        _vm._v(" "),
-                        _c("br")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "col-12 mb-2" }, [
@@ -1078,9 +1079,7 @@ var render = function() {
                               }
                             }
                           })
-                        ]),
-                        _vm._v(" "),
-                        _c("br")
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "col-12 mb-2" }, [
@@ -1125,16 +1124,42 @@ var render = function() {
                       _vm._v(" "),
                       _c("br"),
                       _vm._v(" "),
-                      _c("div", { staticClass: "col-12" }, [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary",
-                            attrs: { type: "submit" }
-                          },
-                          [_vm._v("Submit")]
-                        )
-                      ])
+                      _c(
+                        "div",
+                        { staticClass: "col-12" },
+                        [
+                          _c(
+                            "button",
+                            {
+                              staticClass: "btn btn-primary",
+                              attrs: { type: "submit" }
+                            },
+                            [_vm._v("Submit")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                "exact-active-class": "active",
+                                to: "/customers"
+                              }
+                            },
+                            [
+                              _c(
+                                "button",
+                                {
+                                  staticClass: "btn btn-primary",
+                                  attrs: { type: "submit" }
+                                },
+                                [_vm._v("List")]
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
                     ])
                   ]
                 )
