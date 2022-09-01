@@ -1,56 +1,27 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 require('./bootstrap');
+import vue from 'vue'
+window.Vue = vue;
 
-window.Vue = require('vue');
+import App from './components/App.vue';
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+//importamos Axios
+import VueAxios from 'vue-axios';
+import axios from 'axios';
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+//Importamos y configuramos el Vue-router
+import VueRouter from 'vue-router';
+import {routes} from './routes';
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+const router = new VueRouter({
+    mode: 'history',
+    routes: routes
+});
 
-new Vue({
-    el: '#crud',
-    created: function(){
-        this.getKeeps();
-    },
-    data: {
-        keeps: []
-    },
-     methods:{
-         getKeeps: function (){
-             var urlKeeps = 'customers';
-             axios.get(urlKeeps).then(response => {
-                 this.keeps = response.data
-             });
-         },
-         deleteKeep: function (keep){
-
-             var url ='customers/' + keep.id;
-             axios.delete(url).then(response =>{
-
-               this.getKeeps();
-               toastr.success('Eliminado Correctamente');
-             });
-         }
-     }
-
+const app = new Vue({
+    el: '#app',
+    router: router,
+    render: h => h(App),
 });

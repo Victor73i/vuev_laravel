@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
-});
+/* Route::get('/', function () {
+    return view('welcome');
+}); */
 
-Route::resource('customers', 'TaskController', ['except' => 'show', 'create', 'edit']);
+Route::get('{any}', function () {
+    return view('app');
+})->where('any', '.*');
