@@ -4,11 +4,9 @@ window.Vue = vue;
 
 import App from './components/App.vue';
 
-//importamos Axios
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
-//Importamos y configuramos el Vue-router
 import VueRouter from 'vue-router';
 import {routes} from './routes';
 
