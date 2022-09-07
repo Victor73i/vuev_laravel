@@ -1,6 +1,6 @@
 <template>
     <main>
-        <nav class="navbar navbar-expand-lg bg-warning" style="background-color: #EF5107;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Tarea Vue.js</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

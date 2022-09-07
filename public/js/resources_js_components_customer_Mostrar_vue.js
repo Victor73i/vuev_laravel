@@ -1103,23 +1103,30 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("thead", { staticClass: "bg-danger text-white" }, [
-      _c("tr", [
-        _c("th", [_vm._v("ID")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("NAME")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("ADDRESS")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("PHONE_NUMBER")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("CREATED_AT")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("UPDATED_AT")]),
-        _vm._v(" "),
-        _c("th", [_vm._v("Actions")])
-      ])
-    ])
+    return _c(
+      "thead",
+      {
+        staticClass: "bg-dark text-white",
+        attrs: { STYLE: "background-color: #67DECD;" }
+      },
+      [
+        _c("tr", [
+          _c("th", [_vm._v("ID")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("NAME")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("ADDRESS")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("PHONE_NUMBER")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("CREATED_AT")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("UPDATED_AT")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Actions")])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

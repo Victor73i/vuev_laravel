@@ -19722,72 +19722,65 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("main", [
-    _c(
-      "nav",
-      {
-        staticClass: "navbar navbar-expand-lg bg-warning",
-        staticStyle: { "background-color": "#EF5107" }
-      },
-      [
-        _c("div", { staticClass: "container-fluid" }, [
-          _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-            _vm._v("Tarea Vue.js")
-          ]),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse",
-              attrs: { id: "navbarSupportedContent" }
-            },
-            [
-              _c("ul", { staticClass: "navbar-nav me-auto mb-2 mb-lg-0" }, [
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "nav-link active",
-                        attrs: {
-                          "exact-active-class": "active",
-                          to: "/",
-                          "aria-current": "page"
-                        }
-                      },
-                      [_vm._v("Inicio")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  { staticClass: "nav-item" },
-                  [
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "nav-link",
-                        attrs: {
-                          "exact-active-class": "active",
-                          to: "/customers"
-                        }
-                      },
-                      [_vm._v("Customers")]
-                    )
-                  ],
-                  1
-                )
-              ])
-            ]
-          )
-        ])
-      ]
-    ),
+    _c("nav", { staticClass: "navbar navbar-expand-lg navbar-light bg-info" }, [
+      _c("div", { staticClass: "container-fluid" }, [
+        _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+          _vm._v("Tarea Vue.js")
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarSupportedContent" }
+          },
+          [
+            _c("ul", { staticClass: "navbar-nav me-auto mb-2 mb-lg-0" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link active",
+                      attrs: {
+                        "exact-active-class": "active",
+                        to: "/",
+                        "aria-current": "page"
+                      }
+                    },
+                    [_vm._v("Inicio")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link",
+                      attrs: {
+                        "exact-active-class": "active",
+                        to: "/customers"
+                      }
+                    },
+                    [_vm._v("Customers")]
+                  )
+                ],
+                1
+              )
+            ])
+          ]
+        )
+      ])
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "container mt-5" }, [_c("router-view")], 1)
   ])

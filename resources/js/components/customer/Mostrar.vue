@@ -15,7 +15,7 @@
         <div class="col-12"  >
             <div class="table-responsive"  >
                 <table class="table table-bordered border-dark" style="background-color: #F3F0E7; ">
-                    <thead class="bg-danger text-white">
+                    <thead class="bg-dark text-white" STYLE="background-color: #67DECD;">
                     <tr>
                         <th>ID</th>
                         <th>NAME</th>

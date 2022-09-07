@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-12">
-           <center><div class="card text-bg-light mb-3" style="max-width: 35rem; background-color: #FFBF00;"  >
+           <center><div class="card text-bg-light mb-3" style="max-width: 35rem; background-color: #67DECD;"  >
                 <div class="card-header"><h4>NEW Customer</h4></div>
                 <div class="card-body">
                     <form @submit.prevent="crear">
@@ -12,7 +12,7 @@
                                     <label>Name</label>
                                     <input type="text" class="form-control" v-model="customer.name" placeholder="Enter you Name" required>
                                 </div>
-                                
+
 
                             </div>
                             <div class="col-12 mb-2">
@@ -33,10 +33,11 @@
                             </div>
                             <br>
                             <br>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                            <div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Guardar</button>    <router-link :to='{name:"mostrarCustomers"}' class="btn btn-warning">List</router-link>
 
-                                <router-link exact-active-class="active" to="/customers" class="nav-link"><button type="submit" class="btn btn-primary">List</button></router-link>
+                                </div>
 
                             </div>
                         </div>

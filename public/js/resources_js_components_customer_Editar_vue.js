@@ -1012,7 +1012,7 @@ var render = function() {
               staticClass: "card text-bg-light mb-3",
               staticStyle: {
                 "max-width": "35rem",
-                "background-color": "#FFBF00"
+                "background-color": "#67DECD"
               }
             },
             [

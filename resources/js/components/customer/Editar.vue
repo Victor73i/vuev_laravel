@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-12">
-            <center><div class="card text-bg-light mb-3" style="max-width: 35rem; background-color: #FFBF00;">
+            <center><div class="card text-bg-light mb-3" style="max-width: 35rem; background-color: #67DECD;">
                 <div class="card-header"><h4>Edit Customer</h4></div>
                 <div class="card-body">
                     <form @submit.prevent="actualizar">

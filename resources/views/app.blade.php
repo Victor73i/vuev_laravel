@@ -14,7 +14,7 @@
 
         <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet"/>
     </head>
-    <body style="background-color: #67DECD;">
+    <body>
         <div id="app">
 
         </div>
